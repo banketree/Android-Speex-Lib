@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="录音与播放"
+        android:textSize="26dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/Button_start_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onInitRaknet"
+            android:text="开始录音" />
+
+        <Button
+            android:id="@+id/Button_stop_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSendMessage"
+            android:text="停止录音" />
+
+        <Button
+            android:id="@+id/Button_start_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onAudio"
+            android:text="开始语音" />
+
+        <Button
+            android:id="@+id/Button_stop_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onVideo"
+            android:text="停止语音" />
+    </LinearLayout>
+
+</RelativeLayout>
